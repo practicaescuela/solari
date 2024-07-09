@@ -1,0 +1,789 @@
+*::after,
+*::before,
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+:root {
+    --oliviacolor: rgb(75, 233, 96);
+  }
+html{
+    scroll-behavior: smooth;/*desplazamiento suave al navegar con los enlaces y el scroll*/
+}
+body{
+
+    background-color: rgb(0, 140, 158);
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+    font-size: 8px;
+}
+
+.iconvolver{
+    
+}
+
+header{
+    width: 98%;
+    height: ;/*agregar--------*/
+    display: grid;
+    grid-template-columns: 1fr 7fr 2fr;
+    grid-template-rows: 80px auto;
+    gap: 5px;
+}
+
+nav{
+    margin-top: 15px;
+    grid-column: 3/4;
+    grid-row: 1/3;
+    border: 2px solid;
+}
+
+ul{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ 
+   
+}
+li{
+    list-style: none;
+    font-size: 13px;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 170px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+span{
+    padding-right: 8px;
+    font-size: 20px;
+    
+}
+.logo{
+    justify-self:start ;
+    align-self: center;
+    grid-column: 1/3;
+
+}
+.logotaylor{
+    height: 80px;
+    margin: 8px 8px 4px 4px;
+    padding: 4px;   
+  
+}
+#uno{
+    background-color:var(--oliviacolor);
+    color: aqua;
+}
+#dos{
+    background-color: yellow;
+    color: rgb(163, 139, 0);
+    
+}
+#tres{
+    background-color: rgb(216, 100, 216);
+    color: rgb(92, 35, 92);
+    
+}
+#cuatro{
+    background-color: rgb(185, 5, 5);
+    color: rgb(231, 170, 170);
+    
+}
+#cinco{
+    background-color: lightskyblue;
+    color: rgb(0, 88, 117);
+    
+}
+#seis{
+    background-color: black;
+    padding: 7px;
+}
+#siete{
+    background-color: pink;
+    color: aqua;
+    
+}
+#ocho{
+    background-color: rgb(158, 158, 158);
+    color: rgb(54, 54, 54);
+    
+    }
+#nueve{
+    background-color: rgb(100, 64, 47);
+    color: rgb(202, 135, 104);
+    
+}
+#diez{
+    background-color: rgb(39, 39, 167);
+    color: rgb(182, 182, 255);
+}
+#once{
+    background-color: whitesmoke;
+    color: rgb(87, 87, 87);
+}
+#doce{
+    background-color: rgb(146, 141, 219);
+    color: rgb(87, 87, 87);
+}
+#trece{
+    background-color: rgb(180, 255, 187);
+    color: rgb(87, 87, 87);
+}
+
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+  
+}   
+
+
+/*------albunes en head----*/
+ 
+    .container-items{
+
+    display: grid;
+    /*anchominimo de columna 150px, como maximo que ocupe el resto*/
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    
+    justify-content: center;
+    align-content: center;
+    margin: 0 auto 0 auto;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    font-weight: 900;
+    width: 90%;
+    row-gap: 7px;
+   
+}
+
+h1{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: 900;
+    padding: 40px 0;
+    text-align: center;
+}
+
+/*poner ancho a las cajas o elementos grid y hacer que el contenido se adapte*/
+.items{
+    border-radius: 10px;/*el borde esta en el contenedor y no se nota*/
+    /*poner borde superior a img y a button*/
+    width: 100px;
+    box-shadow: 1px 0 2px 1px;
+    justify-self: center; /*alineacion eje principal del contenido dentro de la celda del grid*/
+    align-self:center;  /*alineacion eje vertical 
+    del contenido dentro de la celda del grid*/
+    
+}
+.info.producto{
+    padding: 15px 30px;
+   
+}
+ /*img adaptar al contenedor con width 100% y borde radius superio*/
+.fotoinicio{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px 10px 0px 0px;
+}
+.arianainicio{
+   
+}
+.oliviainicio{
+    
+}
+
+.price{
+    font-size: 10px;
+    font-weight: 900;
+}
+
+.info-producto button{
+    border: none;
+    background: none;
+    background-color: rgb(206, 20, 76);
+    color: aliceblue;
+    padding: 15px 10px;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.imagen_transparente{
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--oliviacolor);
+    color: rgb(218, 182, 252);
+   
+   
+}
+
+.liv{
+    color: rgb(218, 182, 252);
+    text-align: center;
+}
+.or{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.imagen_transparentee{
+    height: 100vh;
+    width: 100vw;
+    background-color: pink;
+}
+.emi{
+    color: rgb(255, 41, 141);
+}
+.em{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.imagen_transparenteee{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(46, 48, 99);
+    color:lightblue ;
+}
+.mateo{
+    color: lightblue;
+}
+.atrevido{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+.bom{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+.eub{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+.tr{
+    width: 100px;
+    height: 100px;
+    object-fit: cover; 
+}
+.imagen_transparenteeee{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(190, 188, 188);
+    color: rgb(82, 81, 81);
+}
+.tay{ 
+    color:rgb(88, 86, 86) ;
+}
+
+
+.ttpda, .ttpd, .style, .sn, .midnights, .red, .fearless, 
+.evermore, .midnights, .folklore, .lover,
+.rep, .debut{
+    width: 100px;
+    height: 100px;
+    object-fit: cover; 
+}
+
+
+.imagen_transparenteeeee{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(207, 120, 70);
+    color: rgb(99, 42, 9);
+}
+.ysya{
+    color: aliceblue;
+}
+.ysy{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.imagen_transparenteeeeee{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(122, 152, 207);
+}
+.sc, .ewo, .evolution, .sinuno, .sindos,.eics, .fruitcake, .sns, .eicsfwd {
+    width: 100px;
+    height: 100px;
+    object-fit: cover
+}
+
+
+.imagen_transparenteeeeeee{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(153, 13, 0);
+    color: aliceblue;
+}
+.duki{
+    color: aliceblue;
+}
+.dk{
+    width: 100px;
+    height: 100px;
+    object-fit: cover 
+}
+
+.imagen_transparenteeeeeeee{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(255, 146, 197);
+}
+.ariana{
+    color: rgb(153, 31, 88);
+}
+.ag, .yt, .me, .dw, .sweetener, .tyn,
+.positions, .positionsd, .yttae, .es{
+    width: 100px;
+    height: 100px;
+    object-fit: cover
+}
+
+
+
+.imagen_transparenteeeeeeeee{
+    color: aliceblue;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(78, 138, 94);
+    text-align: center;
+}
+.nicki{
+    color: rgb(91, 145, 103);
+}
+.nn{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.imagen_transparenteeeeeeeeee{
+    color: aliceblue;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(96, 105, 114);
+}
+.walls{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+.fitf{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+.live{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.missyou{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+.tou{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+.kmm{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+.wmi{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+.dlibyh{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+.wallscancion{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+.btm{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+.st{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.imagen_transparenteeeeeeeeeee{
+    color: aliceblue;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(238, 223, 89);
+}
+.ga{
+    width: 100px;
+    height: 100px;
+    object-fit: cover; 
+}
+.minor{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+.tiwifl{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+.gr{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+.tsou{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+.imagen_transparenteeeeeeeeeeee{
+    color: aliceblue;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(233, 138, 94);
+}
+.hs{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+.imagen_transparenteeeeeeeeeeeee{
+    color: rgb(255, 255, 255);
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(219, 211, 185);
+}
+.tomas{
+
+}
+.cro{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+.container-itemsolivia,
+.container-itemsemilia
+{
+   
+    /*
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    align-items: flex-start;
+    width: 60vw;
+    margin: 30px;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    font-weight: 900;
+    gap: 20px;*/
+}
+.container-itemsemilia{
+  /*  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    align-items: flex-start;
+    width: 70vw;
+    margin: 30px ;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    font-weight: 900;
+    gap: 20px;*/
+
+}
+
+.container-itemstrueno,
+.container-itemsduki,
+.container-itemsnicki,
+.container-itemslouis{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    row-gap: 7px;
+    justify-content: center;
+    align-content: center;
+    margin: 0 auto 0 auto;
+    width: 60%;
+}
+.container-itemsolivia, .container-itemsysy,
+.container-itemsariana{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    justify-content: center;
+    align-content: center;
+    margin: 0 auto 0 auto;
+    row-gap: 7px;
+    width: 70%;
+}
+
+.container-itemsemilia, .container-itemstaylor, 
+.container-itemssabrina, .container-itemsgracie,
+.container-itemsharry, .container-itemscro {
+
+    display: grid;
+    /*anchominimo de columna 150px, como maximo que ocupe el resto*/
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    
+    justify-content: center;
+    align-content: center;
+    margin: 0 auto 0 auto;
+   /* grid-column: 2/3;
+    grid-row: 2/3;*/
+    font-weight: 900;
+    width: 80%;
+    row-gap: 7px; 
+}
+/*.container-itemstrueno{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    align-items: flex-start;
+    width: 70vw;
+    margin: 30px ;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin: 0 auto;
+    font-weight: 900;
+    gap: 20px;
+}
+.container-itemstaylor{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    align-items: flex-start;
+    width: 70vw;
+    margin: 30px;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    font-weight: 900;
+    gap: 20px;
+
+.container-itemsysy{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    align-items: flex-start;
+    width: 70vw;
+    margin: 30px;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    font-weight: 900;
+    gap: 20px;
+}
+.container-itemssabrina{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    align-items: flex-start;
+    width: 70vw;
+    margin: 30px;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    font-weight: 900;
+    gap: 20px;
+}
+.container-itemsduki{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+    align-items: flex-start;
+    width: 60vw;
+    margin: 30px;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    font-weight: 900;
+    gap: 20px;
+}
+.container-itemsariana{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    align-items: flex-start;
+    width: 60vw;
+    margin: 30px;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    font-weight: 900;
+    gap: 20px;
+}
+.container-itemsnicki{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+    align-items: flex-start;
+    width: 60vw;
+    margin: 30px;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    font-weight: 900;
+    gap: 20px;
+}
+.container-itemslouis{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+    align-items: flex-start;
+    width: 60vw;
+    margin: 30px;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    font-weight: 900;
+    gap: 20px;
+}
+.container-itemsgracie{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    align-items: flex-start;
+    width: 70vw;
+    margin: 30px;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    font-weight: 900;
+    gap: 20px;
+}
+.container-itemsharry{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    align-items: flex-start;
+    width: 70vw;
+    margin: 30px;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    font-weight: 900;
+    gap: 20px;
+}
+.container-itemscro{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    align-items: flex-start;
+    width: 70vw;
+    margin: 30px;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    font-weight: 900;
+    gap: 20px;
+}*/
+li:hover{
+    color: white;
+}
+
+.fa-chevron-up{
+    font-size: 40px;
+ 
+    position: fixed;
+    top: 95%;
+    left: 90%;
+    cursor: pointer;
+}
+footer{
+    height: 150px;
+    background-color: aqua;
+    font-size: 20px;
+    display: grid;
+    place-content: center;
+
+}
+
+@media (width <1000px){
+    .imagen_transparente, .imagen_transparentee, .imagen_transparenteee,
+    .imagen_transparenteeee, .imagen_transparenteeeee, .imagen_transparenteeeeee,
+    .imagen_transparenteeeeeee, .imagen_transparenteeeeeeee,
+    .imagen_transparenteeeeeeeee, .imagen_transparenteeeeeeeeee,
+    .imagen_transparenteeeeeeeeeee,.imagen_transparenteeeeeeeeeeee,
+    .imagen_transparenteeeeeeeeeeeee{
+        height: min-content;
+    }
+}
+
+
+@media (width < 770px){
+    ul{
+  
+    
+    }
+    nav{
+       
+        
+    }
+    ul:hover{
+     
+    }
+    span{
+       
+    }
+    li{
+       
+    }
+  
+   a{
+    
+   }
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
